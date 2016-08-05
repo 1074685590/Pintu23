@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">移动拼图</string>
+
+    <string name="title_activity_fullscreen">开始界面</string>
+    <string name="start_button">开始游戏</string>
+    <string name="exit_button">退出</string>
+    <string name="textView">游戏选画：《轻动》</string>
+    <string name="textView1">游戏时间：</string>
+    <string name="textView2">总分数：</string>
+</resources>

@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.leiyang.pintu23.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <!--
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+        -->
+    <ImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:gravity="center"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:keepScreenOn="true"
+        android:background="@mipmap/tubiao"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:text="@string/start_button"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:keepScreenOn="true"
+        android:background="#ffffff"
+
+        android:layout_marginTop="120dp"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_width="0dp"
+                android:background="#4052b5"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/exit_button" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
